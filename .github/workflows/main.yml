@@ -1,11 +1,17 @@
+# Info sur le Workflow
 name: gh-actions-starter
 description: Workflow de test avec GitHub Action pour expérimenter l'outil
 author: SaebaRyoCityHunter
 version: 1.0.0
 branding:
-   icon: 'docker'
-   color: "gray-dark"
+  icon: 'docker'
+  color: "gray-dark"
 
-runs:
-   using: 'docker'
-   image: 'Dockerfile'
+# Conditions et lancement du Workflow
+run-name: Le workflow de ${{ github.actor }} est lancé
+on:
+  [push]
+jobs:
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
