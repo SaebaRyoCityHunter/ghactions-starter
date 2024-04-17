@@ -1,0 +1,6 @@
+services:
+  web:
+    image: shinsenter/symfony:latest
+    volumes:
+      - ./my_site.crt:/etc/ssl/site/server.crt
+      - ./my_site.key:/etc/ssl/site/server.key
