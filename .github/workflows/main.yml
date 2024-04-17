@@ -3,7 +3,7 @@ description: Workflow de test avec GitHub Action pour expérimenter l'outil
 author: SaebaRyoCityHunter
 version: 1.0.0
 branding:
-   icon: 'play-circle'
+   icon: 'docker'
    color: "gray-dark"
 
 runs:
